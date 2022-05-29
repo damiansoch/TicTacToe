@@ -1,0 +1,28 @@
+h1 {
+  text-align: center;
+  font-family: "Bangers", cursive;
+  letter-spacing: 10px;
+  color: rgb(32, 0, 91);
+}
+.center-container {
+  width: 608px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: rgb(188, 220, 254);
+}
+table {
+  border-collapse: collapse; // collapse borders into 1
+  border-style: hidden; // hides outer borders
+}
+td {
+  cursor: pointer;
+  border: 4px solid rgba(3, 94, 252, 0.8);
+  padding: 0px;
+  width: 200px;
+  height: 200px;
+}
+canvas {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+}

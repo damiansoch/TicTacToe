@@ -4,10 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="./Images/iconmonstr-x-mark-11-24 (2).png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./CSS/game.css" />
-    <title>Document</title>
+    <title>Tic Tac Toe GAME</title>
   </head>
   <body>
+    <h1 id="headher"></h1>
+
+    <div class="center-container">
+      <canvas id="win-lines" width="608" height="608"></canvas>
+      <table>
+        <tr>
+          <td id="0" onclick="placeXorO('0')">0</td>
+          <td id="1" onclick="placeXorO('1')">1</td>
+          <td id="2" onclick="placeXorO('2')">2</td>
+        </tr>
+        <tr>
+          <td id="3" onclick="placeXorO('3')">3</td>
+          <td id="4" onclick="placeXorO('4')">4</td>
+          <td id="5" onclick="placeXorO('5')">5</td>
+        </tr>
+        <tr>
+          <td id="6" onclick="placeXorO('6')">6</td>
+          <td id="7" onclick="placeXorO('7')">7</td>
+          <td id="8" onclick="placeXorO('8')">8</td>
+        </tr>
+      </table>
+    </div>
     <script src="./Js/tictactoe.js"></script>
   </body>
 </html>
