@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Patrick Hand", cursive;
+}
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 3rem;
+}
+#container {
+  width: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.boxes {
+  width: 300px;
+  height: 300px;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+}
+.imgContainer {
+  width: 100%;
+  height: 90%;
+  margin-top: 5%;
+  cursor: pointer;
+  background-image: url(../IMG/clipart127543.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+}
+.top {
+  border-top: none;
+}
+.bottom {
+  border-bottom: none;
+}
+.right {
+  border-right: none;
+}
+.left {
+  border-left: none;
+}
+// winning lines
+.winning_lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.allLines {
+  position: absolute;
+  background-color: rgb(217, 0, 255);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 5px;
+  pointer-events: none;
+}
+#x1,
+#x2,
+#x3 {
+  width: 20px;
+  height: 920px;
+  top: 0px;
+}
+#x1 {
+  left: 180px;
+}
+#x2 {
+  left: 490px;
+}
+#x3 {
+  left: 800px;
+}
+#y1,
+#y2,
+#y3 {
+  height: 20px;
+  width: 1000px;
+  left: 0px;
+}
+#y1 {
+  top: 135px;
+}
+#y2 {
+  top: 450px;
+}
+#y3 {
+  top: 755px;
+}
+#cross1,
+#cross2 {
+  position: absolute;
+  height: 1250px;
+  width: 20px;
+}
+#cross1 {
+  top: -150px;
+  left: 50%;
+  transform: rotate(-45deg);
+}
+#cross2 {
+  top: -150px;
+  right: 50%;
+  transform: rotate(45deg);
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+button {
+  margin-top: 10px;
+  width: 300px;
+  height: 50px;
+  border: none;
+  background-color: rgb(66, 0, 98);
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
+  transition: transform 0.1s ease-in-out;
+  &:hover {
+    background-color: rgb(99, 0, 148);
+    transform: scale(1.1);
+  }
+  &:active {
+    background-color: rgb(66, 0, 98);
+    transition: none;
+    transform: scale(1);
+  }
+}

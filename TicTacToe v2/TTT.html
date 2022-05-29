@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./IMG/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>TicTacToe version 2 (2 players)</h1>
+    <div id="container">
+      <div class="boxes top left">
+        <div id="1" class="imgContainer" onclick="XorO(this.id)"></div>
+      </div>
+      <div class="boxes top">
+        <div id="2" class="imgContainer" onclick="XorO(this.id)"></div>
+      </div>
+      <div class="boxes top right">
+        <div id="3" class="imgContainer" onclick="XorO(this.id)"></div>
+      </div>
+      <div class="boxes left">
+        <div id="4" class="imgContainer" onclick="XorO(this.id)"></div>
+      </div>
+      <div class="boxes">
+        <div id="5" class="imgContainer" onclick="XorO(this.id)"></div>
+      </div>
+      <div class="boxes right">
+        <div id="6" class="imgContainer" onclick="XorO(this.id)"></div>
+      </div>
+      <div class="boxes bottom left">
+        <div id="7" class="imgContainer" onclick="XorO(this.id)"></div>
+      </div>
+      <div class="boxes bottom">
+        <div id="8" class="imgContainer" onclick="XorO(this.id)"></div>
+      </div>
+      <div class="boxes bottom right">
+        <div id="9" class="imgContainer" onclick="XorO(this.id)"></div>
+      </div>
+      <div class="winning_lines">
+        <div class="allLines" id="x1"></div>
+        <div class="allLines" id="x2"></div>
+        <div class="allLines" id="x3"></div>
+        <div class="allLines" id="y1"></div>
+        <div class="allLines" id="y2"></div>
+        <div class="allLines" id="y3"></div>
+        <div class="allLines" id="cross1"></div>
+        <div class="allLines" id="cross2"></div>
+      </div>
+    </div>
+    <h1 id="winner"></h1>
+    <div class="buttonContainer">
+      <button onclick="reloadPage()">Play Again!</button>
+    </div>
+    <script src="./JS/app.js"></script>
+  </body>
+</html>
